@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    background-color: #202547;
+    user-select: none; /* pesquise sobre */
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    height: 45vh;   
+}
+
+header div {
+    margin-top: 2vh;
+    margin: auto;
+}
+
+.cruz-mobile {
+    width: 100px;
+    margin: auto;
+}
+
+header h3 {
+    margin-top: .5rem;
+    color: #ff842c; 
+}
+
+header div .tematica-mobile {
+    margin-top: .5rem;
+    align-items: auto;
+    text-align: center;
+    color: #ff842c;
+}
+
+header div .tematica-mobile h2 {
+    font-weight: normal;
+    font-family: 'Monoton';
+}
+
+header div .tematica-mobile small {
+    position: relative;
+    right: -35vw;
+}
+
+main{
+    align-items: center;
+    display: flex;
+    position: relative;
+    height: 35vh;
+}
+main div {
+    display: none;
+}
+
+.tematica {
+    display: none;
+}
+
+.nav-mobile{
+    width: 75vw;
+    margin: auto;
+    display: grid;
+    gap: .5rem;
+}
+
+.nav-mobile a {
+    text-align: center;
+    border: 2px solid #ff842c;
+    padding: 5px;
+    border-radius: 10px;
+    color: #ff842c;
+    background-color: #191e3a;
+    cursor: pointer;
+}
+
+.nav-mobile a:hover{
+    border: 2px solid #191e3a;
+    color: #191e3a;
+    background-color: #ff842c;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #ff842c;
+    background-color: #191e3a;
+    position: relative;
+    height: 19vh;
+    margin-top: 1vh;
+    bottom: 0; 
+}
+
+footer img {
+    margin-left: 1rem;
+    height: 80%;
+}
+
+footer div {
+    padding: 10px;
+    width: 50%;
+    margin-left: .5rem;
+    color: #ff842c;
+    border: 2px solid #ff842c;
+    border-radius: 10px;
+}
+
+footer div a {
+    color: #ff842c;
+}
+
+.nav-descktop{
+    display: none;
+}
+.descktop-details{
+    display: none;
+}
+@media screen and (min-width: 1200px){
+    .container{
+        /* margin: auto;
+        max-width: 70%; */
+        background-color: #202547;
+    }
+
+    header {
+        padding: 0;
+        width: 100vw;
+        background-color: #191e3a;
+        height: 10vh;
+        border-bottom: 2px solid #ff842c;
+    }
+    header .nav-descktop {
+        position: relative;
+        margin-left: auto;
+        margin-right: 2rem;
+    }
+
+    header .nav-descktop a {
+        padding: 15px;
+        border-radius: 10px;
+        color: #ff842c;
+        background-color: #191e3a;
+        cursor: pointer;
+    }
+    main {
+        padding: 0;
+        height: 75vh;
+    }
+    main .cruz {
+        width: 20rem;
+    }
+
+    main h1 {
+        margin-top: .5rem;
+        color: #ff842c;
+    }
+
+    main  .tematica {
+        display: block;
+        margin-right: auto;
+        color: #ff842c;
+    }
+    main div {
+        display: block;
+        margin-left: auto;
+        text-align: center;
+    }
+    main  .tematica h1 {
+        font-weight: normal;
+        font-family: 'Monoton';
+    }
+
+    main  .tematica small {
+        position: relative;
+    }
+    footer {
+        padding: 0;
+        bottom: 0;
+        height: 15vh;
+    }
+
+    .nav-descktop{
+        display: block;
+    }
+
+    .descktop-details{
+        display: block;
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+
+    .mobile-details{
+        display: none;
+    }
+}
