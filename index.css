@@ -192,11 +192,18 @@ footer div a {
         position: relative;
     }
     footer {
+        display: flex;
         padding: 0;
         bottom: 0;
         height: 15vh;
     }
 
+    footer div {
+        margin-right: auto;
+    }
+    footer img {
+        margin-left: auto;
+    }
     .nav-descktop{
         display: block;
     }

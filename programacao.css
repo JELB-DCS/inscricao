@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
 * {
     margin: 0;
@@ -12,6 +13,7 @@
 }
 
 body {
+    color: #ff842c;
     width: 100vw;
     height: 100vh;
     font-family: poppins, sans-serif;
@@ -21,7 +23,8 @@ body {
     overflow-x: hidden;
 }
 
-header {
+header{
+    display: block;
     top: 0;
     width: 100vw;
     position: fixed;
@@ -40,64 +43,26 @@ header a {
 }
 
 header h2 {
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
-
+header .download-programacao {
+    left: 100vw;
+    transform: translate(-100%, 0);
+    padding-right: 1rem;
+}
 main {
+    padding: 10px;
+    border: 2px solid #ff842c;
+    border-radius: 10px;
     margin-top: 11vh;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     margin-bottom: 1rem;
 }
-.image {
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    display: flex;
-    grid-area: image;
-}
-.image img {
-    border-radius: 10px;
-    width: 4rem;
-    height: 4rem;
-    margin-left: .5rem;
-}
-.function {
-    grid-area: function;
-}
-.contact {
-    grid-area: contact;
-}
-.card {
-    grid-template-columns: 5.5rem auto;
-    height: 10vh;
-    margin-bottom: .5rem;
-    display: grid;
-    grid-template-areas: 
-    "image name" 
-    "image function" 
-    "image contact";
-    border: 2px solid #ff842c;
-    padding: 5px;
-    border-radius: 10px;
-    color: #ff842c;
-    background-color: #191e3a;
-}
 
-
-nav a {
-    text-align: center;
-    border: 2px solid #ff842c;
-    padding: 5px;
-    border-radius: 10px;
-    color: #ff842c;
-    background-color: #191e3a;
-}
-
-nav a:hover{
-    border: 2px solid #191e3a;
-    color: #191e3a;
-    background-color: #ff842c;
+main h4 {
+    margin-top: .5rem;
 }
 
 footer {
@@ -108,6 +73,7 @@ footer {
     position: relative;
     height: 19vh;
     margin-top: 1vh;
+    bottom: 0; 
 }
 
 footer img {
