@@ -93,3 +93,50 @@ footer div {
 footer div a {
     color: #ff842c;
 }
+
+@media screen and (min-width: 1200px){
+    header {
+        height: 7vh;
+        margin: 0;
+        padding: 0;
+    }
+    main {
+        margin-top: 8vh;
+        overflow-y: auto;
+        height: 72vh;
+    }
+    .programacao-conteudo {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .programacao-conteudo div {
+        padding: .5rem;
+        margin: .5rem;
+        border-radius: 10px;
+        border: 2px solid #ff842c;
+    }
+    main div:first-child{
+        border-bottom: 2px solid #ff842c;
+    }
+
+    footer {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 7vh;
+        position: fixed;
+        display: flex;
+        padding: 0;
+        bottom: 0;
+        height: 15vh;
+    }
+
+    footer div {
+        margin-right: auto;
+    }
+
+    footer img {
+        margin-left: auto;
+    }
+}
